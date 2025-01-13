@@ -10,7 +10,6 @@ export default function Register() {
   const [diplomas, setDiplomas] = useState([]);
 
   useEffect(() => {
-    // Fetch diplomas when the component mounts
     const fetchDiplomas = async () => {
       const diplomaList = await getDiplomas();
       setDiplomas(diplomaList);

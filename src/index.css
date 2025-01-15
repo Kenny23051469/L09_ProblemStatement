@@ -241,3 +241,71 @@ footer.container {
     width: 60%;
   }
 }
+
+.faq-container {
+  margin-top: 2em;
+}
+
+.faq-item {
+  padding: 1em;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 1em;
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.faq-answer {
+  margin-top: 0.75em;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.faq-item:hover {
+  background-color: #f0f0f0;
+  border-color: #dbdbdb;
+}
+
+.faq-question:hover {
+  color: #5dabaa;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .faq-container {
+    max-width: 800px;
+  }
+}
+
+.diploma-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;w
+}
+
+.diploma-item {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.diploma-item h3 {
+  font-size: 1.5rem;
+}
+
+.diploma-item p {
+  font-size: 1rem;
+}
+
+.diploma-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}

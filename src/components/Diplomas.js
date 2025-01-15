@@ -26,22 +26,21 @@ export default function Diplomas() {
 
       <div className="diploma-list">
         {filteredDiplomas.map((dip) => (
-          <div className="diploma-item" key={dip.id}>
-            <img
-              src={dip.banner}
-              alt={dip.name}
-              className="diploma-image"
-            />
-            <h3>{dip.name}</h3>
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "category-active" : null
-              }
-              to={dip.id}
-            >
-              Learn More!
-            </NavLink>
-          </div>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "category-active" : null
+            }
+            to={dip.id}
+          >
+            <div className="diploma-item" key={dip.id}>
+              <img
+                src={dip.banner}
+                alt={dip.name}
+                className="diploma-image"
+              />
+              <h3>{dip.name}</h3>
+            </div>
+          </NavLink>
         ))}
       </div>
 
